@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns:o>
+    <head>
+        <meta charset="utf-8">
+        <title>Easy Typing</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Serif&display=swap" rel="stylesheet">    </head>
+    <body>
+        <nav>
+            <a href="/"><div class="brand">
+                <div class="brand-logo"><p>ET</p></div>
+                <div class="brand-name">Easy Typing</div>
+            </div></a>
+            <div class="nav-links">
+                <div class="link tooltip"><a href="/edit-shorthands">Edit</a>
+                    <span class="tooltiptext">Edit your Personal ShortHand Diary</span>
+                </div>
+            </div>
+        </nav>
+        <div class="edit-area">
+            <div class="toolbar">
+                <div class="tooltip">
+                    <img class="icon bold" src="https://img.icons8.com/metro/16/000000/bold.png"/>
+                    <span class="tooltiptext">Bold</span>
+                </div>
+                <div class="tooltip">
+                    <img class="icon italic" src="https://img.icons8.com/metro/16/000000/italic.png"/>
+                    <span class="tooltiptext">Italic</span>
+                </div>
+                <div class="tooltip mr-20">
+                    <img class="icon underline" src="https://img.icons8.com/android/16/000000/underline.png"/>
+                    <span class="tooltiptext">Underline</span>
+                </div>
+                <div class="tooltip icon">
+                    <img src="https://img.icons8.com/metro/20/000000/text-color.png">
+                    <input type="color" name="color" id="color">
+                    <span class="tooltiptext">Text Color</span>
+                </div>
+                <div class="tooltip icon mr-20">
+                    <img src="https://img.icons8.com/metro/20/000000/fill-color.png">
+                    <input type="color" name="background-color" id="background-color">
+                    <span class="tooltiptext">Fill Color</span>
+                </div>
+                <div class="tooltip">
+                    <img class="icon align-left" src="https://img.icons8.com/metro/16/000000/align-left.png"/>
+                    <span class="tooltiptext">Left Align</span>
+                </div>
+                <div class="tooltip">
+                    <img class="icon align-center" src="https://img.icons8.com/metro/16/000000/align-center.png"/>
+                    <span class="tooltiptext">Center Align</span>
+                </div>
+                <div class="tooltip">
+                    <img class="icon align-right" src="https://img.icons8.com/metro/16/000000/align-right.png"/>
+                    <span class="tooltiptext">Right Align</span>
+                </div>
+                <div class="tooltip">
+                    <img class="icon align-justify mr-20" src="https://img.icons8.com/metro/16/000000/align-justify.png"/> 
+                    <span class="tooltiptext">Justified Align</span>
+                </div>
+                <div class="tooltip">
+                    <img class="icon numbered-list" src="https://img.icons8.com/metro/16/000000/numbered-list.png"/> 
+                    <span class="tooltiptext">Numbered List</span>
+                </div>
+                <div class="tooltip mr-20">
+                    <img class="icon list" src="https://img.icons8.com/metro/16/000000/list.png"/> 
+                    <span class="tooltiptext">Bulleted List</span>
+                </div>
+                <div class="tooltip">
+                    <img class="icon strike-through" src="https://img.icons8.com/material-rounded/16/000000/strikethrough.png"/> 
+                    <span class="tooltiptext">Strike Through</span>
+                </div>
+                <div class="tooltip">
+                    <img class="icon superscript" src="https://img.icons8.com/material-rounded/16/000000/superscript.png"/> 
+                    <span class="tooltiptext">Superscript</span>
+                </div>
+                <div class="tooltip">
+                    <img class="icon subscript" src="https://img.icons8.com/material-rounded/16/000000/subscript.png"/> 
+                    <span class="tooltiptext">Subscript</span>
+                </div>
+                <div class="tooltip mode-container">
+                    <select name="mode" id="mode">
+                        <option value="NULL">Select the mode of editing</option>
+                        <option value="1">Formatting and Editing Mode</option>
+                        <option value="2">Transliteration Mode (Hinglish → Hindi)</option>
+                    </select>
+                </div>
+                <div class="tooltip">
+                    <img class="icon download" src="https://img.icons8.com/metro/16/000000/download.png"/>
+                    <span class="tooltiptext">Download as Text File</span>
+                </div>
+                <div class="tooltip">
+                    <img class="icon print" src="https://img.icons8.com/metro/16/000000/print.png"/>
+                    <span class="tooltiptext">Print</span>
+                </div>               
+            </div>            
+            <div class="editor" id="editor" contenteditable="true"></div>            
+            <div class="suggestions" id="suggestions"></div>
+        </div>
+        <script src="./main.js" async defer></script>
+    </body>
+</html>

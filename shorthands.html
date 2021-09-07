@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Serif&display=swap" rel="stylesheet">    </head>
+    </head>
+    <body>
+        <nav>
+            <a href="/"><div class="brand">
+                <div class="brand-logo"><p>ET</p></div>
+                <div class="brand-name">Easy Typing</div>
+            </div></a>
+            <div class="nav-links">
+                <div class="link tooltip">Edit
+                    <span class="tooltiptext">Edit your Personal ShortHand Diary</span>
+                </div>
+            </div>
+        </nav>
+        <div id="shorthands-table">
+            <table>
+                <tr>
+                    <th>Abbreviation</th>
+                    <th>Full Form</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+            <div class="form">
+                <input type="text" id="key" placeholder="Enter the abbreviation"><br>
+                <input type="text" id="fullform" placeholder="Enter the full form for the abbreviation"><br>
+                <button type="button" id="add">Add</button>
+            </div>            
+        </div>
+        <script src="./shorthands.js" async defer></script>
+    </body>
+</html>

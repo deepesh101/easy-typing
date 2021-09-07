@@ -1,0 +1,178 @@
+* {
+    font-family: 'Noto Serif', serif;
+}
+body {
+    margin: 0;
+}
+nav {
+    padding: 8px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+}
+table {
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+}
+th {
+    background-color: gray;
+}
+a {
+    text-decoration: none;
+}
+a:active {
+    color: -webkit-link;
+}
+input[type="color"] {
+    padding: 0;
+    border: none;
+    background-color: unset;
+    cursor: pointer;
+    width: 20px;
+}
+.brand {
+    display: flex;
+    align-items: center;
+}
+.brand-logo {
+    background-color: whitesmoke;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+    margin: auto 20px auto 30px;
+}
+.brand-logo p {
+    font-family: 'Dancing Script', cursive !important;
+}
+.brand-logo p {
+    flex: 1;
+}
+.brand-name {
+    font-size: 30px;
+}
+.link {
+    cursor: pointer;
+}
+.nav-links {
+    position: absolute;
+    right: 50px;
+    font-size: larger;
+}
+.edit-area {
+    margin: 20px 100px;
+}
+.toolbar {
+    padding: 8px;
+    border: 2px solid gray;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.editor {
+    height: 400px;
+    border: 2px solid gray;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+}
+.editor:focus {
+    outline: none;
+}
+.icon {
+    padding: 5px;
+}
+.mode-container {
+    margin: auto 50px;
+    display: flex;
+    align-items: center;
+}
+.icon:hover {
+    background-color: lightgray;
+}
+.suggestions {
+    display: flex;
+    flex-wrap: wrap;
+}
+.word-suggestion {
+    border-radius: 10px;
+    background-color: lightgrey;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+#shorthands-table {
+    width: 50%;
+    margin: 30px auto;
+}
+.form {
+    text-align: center;
+}
+#key, #fullform {
+    border: none;
+    border-bottom: 2px solid gray;
+    padding: 5px;
+    font-size: 16px;
+    width: 90%;
+    margin: 6px auto;
+    outline: none;
+}
+#fullform {
+    margin-bottom: 20px;
+}
+#add {
+    width: 100px;
+    padding: 6px;
+    color: whitesmoke;
+    background-color: teal;
+    border-radius: 5px;
+    box-shadow: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.mr-20 {
+    margin-right: 20px;
+}
